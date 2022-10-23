@@ -1,0 +1,238 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/706ddd9c-2b36-4167-8a3e-5e01c1e0e020/ddsxagb-59e8b218-9a34-4beb-a709-4bee99881639.png/v1/fill/w_1920,h_1080,q_80,strp/jeopardy__season_36_sky_background_by_nikolaib2001_ddsxagb-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTA4MCIsInBhdGgiOiJcL2ZcLzcwNmRkZDljLTJiMzYtNDE2Ny04YTNlLTVlMDFjMWUwZTAyMFwvZGRzeGFnYi01OWU4YjIxOC05YTM0LTRiZWItYTcwOS00YmVlOTk4ODE2MzkucG5nIiwid2lkdGgiOiI8PTE5MjAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.hX24Zyg-oa32bOkeuvm4yfu2G5xV9B5Hl6A5fZPK5Y4);
+    background-size: cover;
+    background-repeat: none;
+    margin: 0;
+    padding: 10px;
+    text-align: center;
+    height: 100%;
+}
+
+h1 { 
+    font-size: 80pt;
+    justify-self: center;
+    margin-bottom: 0;
+}
+
+h2 {
+    font-size: 40pt;
+    margin: 0.25em;
+}
+
+.game-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 15em 15em 15em 15em 15em 15em;
+    grid-template-rows: 6em 6em 6em 6em 6em 6em;
+    background-color: rgb(0, 0, 0);
+    padding: 5px;
+    justify-content: center;
+    gap: 8px;
+    margin: 10px;
+    width: auto;
+}
+
+.question {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 3;
+    background-image: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/c3f34d4f-0676-4857-9fd9-cc10807708af/dcwx9jx-64f09dc2-abff-4aae-9787-153f19b93f27.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2MzZjM0ZDRmLTA2NzYtNDg1Ny05ZmQ5LWNjMTA4MDc3MDhhZlwvZGN3eDlqeC02NGYwOWRjMi1hYmZmLTRhYWUtOTc4Ny0xNTNmMTliOTNmMjcucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.ZT8FY-fxjQdFNAjxR29Yykr_tNWoF3BsXguL8LYQahI);
+    background-size: auto;
+    color: rgb(260, 200, 0);
+    font-size: 50pt;
+    font-weight: bolder;
+    text-shadow: 3px 3px 5px #000000;
+}
+
+.category {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/c3f34d4f-0676-4857-9fd9-cc10807708af/dcwx9jx-64f09dc2-abff-4aae-9787-153f19b93f27.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2MzZjM0ZDRmLTA2NzYtNDg1Ny05ZmQ5LWNjMTA4MDc3MDhhZlwvZGN3eDlqeC02NGYwOWRjMi1hYmZmLTRhYWUtOTc4Ny0xNTNmMTliOTNmMjcucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.ZT8FY-fxjQdFNAjxR29Yykr_tNWoF3BsXguL8LYQahI);
+    color: white;
+    font-size: 20pt;
+    font-weight: bold;
+    text-shadow: 3px 3px 5px #000000;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    gap: 10px;
+    width: 20%;
+}
+
+input {
+    height: 2em;
+    font-size: 15pt;
+    min-width: 9em;
+}
+
+button-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    background-color: rgb(37, 21, 180);
+    font-size: 20pt;
+    border-radius: 5px;
+    border-color: rgb(20, 20, 20);
+    color: rgb(260, 200, 0);
+    text-shadow: 3px 3px 2px #000000;
+    padding: 10px;
+}
+
+button:hover {
+    background-color: rgb(87, 71, 230);
+    color: rgb(310, 250, 50);
+    transform: scale(1.05);
+    transition: .1s;
+}
+
+.scores {
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+    font-size: 20pt;
+    font-weight: bold;
+}
+
+.next {
+    margin: 20px;
+    padding: 0.2em 0.5em 0.2em 0.5em;
+    font-size: 40pt;
+    align-self: flex-end;
+    font-weight: 500;
+}
+
+footer {
+    justify-self: flex-end;
+    background-color: rgba(128, 128, 128, 0.575);
+    padding: 0 0.5em 0 0.5em;
+    border-radius: 0.2em;
+}
+
+#title-img {
+    width: 75vw;
+}
+
+#title-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+#wager-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+}
+
+#final-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    gap: 10px;
+}
+
+#final {
+    width: 75vw;
+    height: 40vw;
+    font-size: 75pt;
+}
+
+#category-final {
+    background-color: rgba(53, 52, 52, 0.616);
+    border-radius: 5px;
+    padding: 5px;
+    color: rgb(202, 202, 202);
+    font-weight: bold;
+    font-size: 50pt;
+}
+
+@media screen and (max-width: 850px) {
+
+    html {
+        height: 100%;
+    }
+    
+    body {
+        height: 95%;
+    }
+
+    .grid-container {
+        width: 100%;
+        grid-template-columns: 14.5vw 14.5vw 14.5vw 14.5vw 14.5vw 14.5vw;
+        grid-template-rows: 10vw 10vw 10vw 10vw 10vw 10vw;
+        gap: 4px;
+        padding: 5px;
+    }
+
+    .question {
+        font-size: 12pt;
+    }
+
+    .category {
+        font-size: 5pt;
+    }
+
+    .scores {
+        font-size: 12pt;
+    }
+
+    button {
+        font-size: 15pt;
+    }
+
+    form {
+        width: 90%;
+    }
+
+    .next {
+        align-self: center;
+    }
+
+    h1 {
+        font-size: 30pt;
+    }
+
+    h2 {
+        font-size: 15pt;
+    }
+
+    footer {
+        font-size: xx-small;
+        justify-self: flex-end;
+    }
+
+    #title-container{
+        margin-top: 40vw;
+        gap: 10px;
+    }
+
+    #final {
+        font-size: 30pt;
+    }
+
+    #category-final {
+        font-size: 20pt;
+    }
+}
